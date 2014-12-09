@@ -7,7 +7,9 @@ from cms.sitemaps import CMSSitemap
 
 admin.autodiscover()
 
-urlpatterns = i18n_patterns('',
+urlpatterns = [
+    url(r'^subscriber/', include('django_push.subscriber.urls')),
+] + i18n_patterns('',
     url(r'^admin/', include(admin.site.urls)),  # NOQA
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap',
         {'sitemaps': {'cmspages': CMSSitemap}}),

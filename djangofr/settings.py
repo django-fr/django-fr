@@ -140,7 +140,7 @@ INSTALLED_APPS = (
     'reversion',
     'djangofr',
 
-    'djpubsubhubbub',
+    'django_push.subscriber',
 
     'debug_toolbar',
 )
