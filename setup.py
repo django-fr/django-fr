@@ -10,6 +10,7 @@ install_requires = [
     'django-push==0.6.1',
     'Pillow==2.6.1',
     'South==1.0.1',
+    'django-push==0.6.1',
     'dj-database-url==0.3.0',
     'django-classy-tags==0.5.1',
     'django-cms==3.0.7',
